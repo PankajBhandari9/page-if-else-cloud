@@ -1,0 +1,48 @@
+@import "/src/mixsin.scss";
+
+.table-style{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid color(off-white);
+    .bgColorStatus{
+        font-weight: 600;
+        color:white;
+        text-align: center;
+        border-radius: 10px;
+        padding: 5px 6px;
+    }
+    td{
+        border-top: 1px solid color(off-white);
+        border-radius: 5px;
+    }
+    th{
+        padding: 5px;
+    }
+    tr{
+        &:hover{
+            background-color: color(off-white);
+        }
+    }
+}
+
+thead tr{
+    background-color: color(accent-green);
+    &:hover{
+        background-color: color(accent-green) !important;
+
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+
+.bgColorPaid{
+    background-color: color(accent-green);
+}
+.bgColorFailed{
+    background-color: color(accent-warn);
+}
+.bgColorPending{
+    background-color: color(accent-gray);
+}

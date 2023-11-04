@@ -1,0 +1,46 @@
+<div class="fix-div flex-row">
+
+  <div class="menu-style">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+  <div class="top-header-style">
+    <app-top-header></app-top-header>
+  </div>
+
+</div>
+
+<app-side-menu></app-side-menu>
+
+<div class="whole-content">
+  <app-all-cards [cardsList]="topCards"></app-all-cards>
+
+  <div class="grid">
+    <div>
+      <app-recent-orders [tableData]="tableData"></app-recent-orders>
+    </div>
+    <div>
+      <app-new-user-registrations [newUser]="newUser"></app-new-user-registrations>
+    </div>
+  </div>
+  <div class="charts-data-grid ">
+    <div class="card-bg-padding">
+      <div class="chart-heading">
+        Sales Statistics
+      </div>
+      <app-sales-statistics-chart></app-sales-statistics-chart>
+    </div>
+    <div class="card-bg-padding">
+      <div class="chart-heading">
+        Balance Overview
+      </div>
+      <app-balance-overview-chart></app-balance-overview-chart>
+    </div>
+    <div class="card-bg-padding">
+      <div class="chart-heading">
+        Top Products
+      </div>
+      <app-top-products-chart></app-top-products-chart>
+    </div>
+  </div>
+</div>

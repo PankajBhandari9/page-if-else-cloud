@@ -1,0 +1,36 @@
+@import '/src//mixsin.scss';
+
+.card-main{
+    padding:13px 35px;
+    transition: 0.3s;
+    width: 390px;
+
+    &:hover{
+        background-color: color(primary);
+        cursor: auto;
+        color:color(white-bg);
+        .card-value{
+            color:color(white-bg);
+        }
+    }
+}
+
+.flex-space-between{
+    justify-content: space-between;
+}
+.card-value, .card-sign{
+    font-size: 60px;
+}
+
+.card-header{
+    font-size: 23px;
+}
+.card-subheader{
+    font-size: 16px;
+}
+.card-sign{
+    color:rgb(186, 186, 186);
+}
+.card-value{
+    color:color(primary);
+}

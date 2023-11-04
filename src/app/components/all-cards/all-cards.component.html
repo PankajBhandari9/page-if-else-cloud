@@ -1,0 +1,7 @@
+<div class="card-style">
+    <div  *ngFor="let card of cardsList; let i=index">
+        <app-top-card [headerTitle]="card.header" [subHeader]="card.sub_header" [cardValue]="card.value">
+            <i [class]="getCardSign(i)"></i>
+        </app-top-card>
+    </div>
+</div>

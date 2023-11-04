@@ -1,0 +1,36 @@
+<div class="bg-comp-card-style">
+
+    <div class="comp-header-style">
+        New User Registrations
+    </div>
+
+    <div class="scroll-overflow">
+        <div class="gird-user" *ngFor="let userD of newUser">
+            <div class="flex-row item-center">
+                <img [src]="userD.picture" [alt]="userD.name" class="img-user">
+            </div>
+            <div>
+                <div class="user-name">
+                    {{userD.name}}
+                </div>
+                <div class="country-name">
+                    {{userD.country}}
+                </div>
+            </div>
+            <div class="item-center flex-row">
+                <div class="width-100">
+                    <div class="progress-bar" [ngStyle]="{'width':userD.progress+'%'}">
+                    </div>
+                    <span class="progress-percent">
+                        {{userD.progress}}%
+                    </span>
+                </div>
+            </div>
+            <div class="item-center flex-row">
+                <div class="more-btn">
+                    More
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

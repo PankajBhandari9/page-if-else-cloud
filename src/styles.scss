@@ -1,1 +1,84 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./mixsin.scss";
+
+:root{
+  --color-primary:#506de2;
+  --color-white-bg:#fff;
+  --color-off-white:#f1f1f1;
+  --color-accent-green:#30cf75;
+  --color-accent-warn:#ec586e;
+  --color-accent-gray:#7883a3;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    // border:1px solid red
+}
+
+.flex-row{
+    display: flex;
+    position: relative;
+}
+
+.fix-div{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.flex-align-center{
+    display: flex;
+    align-items: center;
+}
+
+.comp-header-style{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.flex-space-between{
+    justify-content: space-between;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(177, 177, 177); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #747474; 
+  }
+
+  .scroll-overflow{
+    height: 400px;
+    overflow-y: scroll;
+    background-color: color(white-bg);
+}
+
+body{
+  background-color: #f4f7fc;
+}
+.bg-comp-card-style{
+  background-color: color(white-bg);
+  padding: 35px;
+  border-radius: 10px;
+}

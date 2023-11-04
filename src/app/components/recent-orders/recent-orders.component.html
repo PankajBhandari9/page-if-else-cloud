@@ -1,0 +1,39 @@
+<div class="bg-comp-card-style">
+
+    <div class="comp-header-style">
+        Recent Order
+    </div>
+
+    <div class="scroll-overflow">
+        <table class="table-style">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Customer</th>
+                    <th>Products</th>
+                    <th>Delivery Date</th>
+                    <th>Status</th>
+                    <th>Taking No#</th>
+                    <th>Shipping</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let tData of tableData; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{tData.name}}</td>
+                    <td>{{tData.product}}</td>
+                    <td>{{tData.delivery_date|date}}</td>
+                    <td class="bgColorStatus"
+                        [ngClass]="{'bgColorPaid':tData.status=='Paid', 'bgColorFailed':tData.status=='Failed', 'bgColorPending':tData.status=='Pending'}">
+                        {{tData.status}}
+                    </td>
+                    <td>#{{tData.tracking_no}}</td>
+                    <td>{{tData.shipping?"Yes":"No"}}</td>
+                    <td><i class="fa-solid fa-xmark"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

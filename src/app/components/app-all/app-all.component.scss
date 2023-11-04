@@ -1,0 +1,51 @@
+// $white-color:#fff;
+@import "/src/mixsin.scss";
+
+.menu-style{
+    background-color: color(primary);
+    color: color(white-bg);
+    padding: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.top-header-style{
+    width: 100%;
+    padding: 20px;
+    background-color: color(white-bg);
+}
+
+.whole-content{
+    position: absolute;
+    left: 105px;
+    top: 100px;
+    width: 89%;
+    padding-bottom: 4rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    div{
+        padding:2rem;
+    }
+}
+
+.charts-data-grid{
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    grid-template-rows: 1fr;
+    padding: 0 2rem;
+    gap:50px;
+}
+
+.chart-heading{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card-bg-padding{
+    background-color: color(white-bg);
+    padding: 1rem;
+}
